@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: white;
+}
+
+header{
+    background: black;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1{
+    font-family:'Righteous', sans-serif;
+    color: salmon;
+    font-size: 40px;
+}
+
+nav{
+    background: salmon;
+    padding: 10px;
+}
+
+nav a{
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero{
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img{
+    width: 70%;
+}
+
+
+.locations{
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+
+.locations h2{
+    font-family: 'Righteous', sans-serif;
+    font-size: 28px;
+}
+
+footer{
+    background: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
