@@ -1,7 +1,7 @@
 body{
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background: white;
+    background: #e6e6e6;
+    font-family: Georgia,  serif;
 }
 
 header{
@@ -14,6 +14,7 @@ header h1{
     font-family:'Righteous', sans-serif;
     color: salmon;
     font-size: 40px;
+    margin: 0;
 }
 
 nav{
@@ -28,9 +29,15 @@ nav a{
     font-weight: bold;
 }
 
+main{
+    width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+}
+
 .hero{
     text-align: center;
-    padding: 20px;
 }
 
 .hero img{
@@ -38,15 +45,22 @@ nav a{
 }
 
 
-.locations{
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-}
-
 .locations h2{
     font-family: 'Righteous', sans-serif;
-    font-size: 28px;
+    font-size: 30px;
+}
+
+#sales-data article{
+    margin: bottom 40px;
+}
+
+#sales-data h2{
+    font-family: 'Righteous', sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
 }
 
 footer{
