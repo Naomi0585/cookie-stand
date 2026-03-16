@@ -1,0 +1,84 @@
+body{
+margin:0;
+background:#e6e6e6;
+font-family:Georgia, serif;
+}
+
+/* HEADER */
+
+header{
+background:black;
+text-align:center;
+padding:40px;
+}
+
+header h1{
+font-family:'Righteous', sans-serif;
+color:salmon;
+font-size:40px;
+margin:0;
+}
+
+/* NAV */
+
+nav{
+background:salmon;
+padding:10px;
+}
+
+nav a{
+margin-right:20px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+/* MAIN CONTENT */
+
+main{
+width:900px;
+margin:auto;
+background:white;
+padding:30px;
+}
+
+/* IMAGE */
+
+.hero{
+text-align:center;
+}
+
+.hero img{
+width:70%;
+}
+
+/* LOCATIONS */
+
+.locations h2{
+font-family:'Righteous', sans-serif;
+margin-top:30px;
+}
+
+/* SALES LIST */
+
+#sales-data article{
+margin-bottom:40px;
+}
+
+#sales-data h2{
+font-family:'Righteous', sans-serif;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#cfcfcf;
+margin-top:30px;
+}
