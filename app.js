@@ -53,7 +53,7 @@ const seattle = {
 
         }
 
-        let.totalCookies=document.createElement('li');
+        let totalCookies=document.createElement('li');
         totalCookies.textContent=`Total: ${this.totalCookies} cookies`;
 
         ul.appendChild(totalCookies);
@@ -65,9 +65,9 @@ const seattle = {
 };
 
 const tokyo={name:'Tokyo',minCustomers:3,maxCustomers:24,avgCookies:1.2,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
-const dubai={name:'Dubai',minCustomers:11,maxCustomers38,avgCookies:3.7,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
-const paris={name:'Paris',minCustomers:20,maxCustomers38,avgCookies:2.3,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
-const lima={name:'Lima',minCustomers:2,maxCustomers:16,avgCookies:4.6,sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
+const dubai={name:'Dubai',minCustomers:11,maxCustomers:38,avgCookies:3.7,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
+const paris={name:'Paris',minCustomers:20,maxCustomers:38,avgCookies:2.3,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
+const lima={name:'Lima',minCustomers:2,maxCustomers:16,avgCookies:4.6,Sales:[],totalCookies:0,calculateCookies:seattle.calculateCookies,render:seattle.render};
 
 
 seattle.calculateCookies();
