@@ -24,7 +24,7 @@ const seattle = {
     totalCookies: 0,
 
     calculateCookies:function(){
-        for(let i=0;i<hours.length,i++){
+        for(let i=0;i<hours.length;i++){
             let customers=randomCustomers(this.minCustomers,this.maxCustomers);
             let cookies=Math.floor(customers*this.avgCookies);
             this.Sales.push(cookies);
@@ -32,7 +32,7 @@ const seattle = {
         }
     },
 
-    render.function(){
+    render:function(){
 
         let article=document.createElement('article');
         let h2=document.createElement('h2');
