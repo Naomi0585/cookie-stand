@@ -1,95 +1,92 @@
-body{
-margin:0;
-background:#e6e6e6;
-font-family:Georgia, serif;
+* {
+    font-family: 'Helvetica',sans-serif;
 }
 
-/* HEADER */
-
-header{
-background:black;
-text-align:center;
-padding:40px;
+header {
+    background: black
 }
 
-header h1{
-font-family: 'Righteous', sans-serif;
-color:salmon;
-font-size:40px;
-margin:0;
+header h1 {
+    color: salmon;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
 }
 
-/* NAV */
-
-nav{
-background:salmon;
-padding:10px;
-text-align: center;
+header nav {
+    background: salmon;
 }
 
-nav a{
-margin: 0 15px;
-text-decoration: none;
-color: black;
-font-weight: bold;
-font-size: 18px;
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* MAIN CONTENT */
+header nav ul li {
+    color: black;
+    display: inline-block;
+    padding: 1em 0;
+    text-align: center;
+    width: 100px;
 
-main{
-width:900px;
-margin:auto;
-background:white;
-padding:30px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-border-radius: 10px;
 }
 
-/* IMAGE */
+.hero {
+    text-align: center;
+    padding: 2em;
+    border-bottom: 1px solid black;
 
-.hero{
-text-align:center;
-margin-bottom: 30px;
 }
 
-.hero img{
-width:70%;
-max-width: 600px; 
-height: auto;
-display: inline-block;
+.content {
+    margin: 3em;
 }
 
-/* LOCATIONS */
-
-.locations h2{
-font-family:'Righteous', sans-serif;
-margin-top:30px;
+.location {
+    margin-bottom: 2em;
 }
 
-/* SALES LIST */
-
-#sales-data article{
-margin-bottom:40px;
-border-bottom: 1px solid #ddd;
-padding-bottom: 15px;
+.location h2 {
+    font-size: 2em;
+    font-weight: bold;
 }
 
-#sales-data h2{
-font-family:'Righteous', sans-serif;
+.location li {
+    margin: .5em 2em;
 }
 
-ul{
-list-style:none;
-padding:0;
+main li {
+    color: #777
 }
 
-/* FOOTER */
+h1, h2 {
+    font-family: 'Righteous', cursive;
 
-footer{
-text-align:center;
-padding:20px;
-background:#cfcfcf;
-margin-top:30px;
-font-size: 14px;
+}
+
+footer {
+    background: white;
+    padding: 3em;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    background-color: salmon;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+th {
+    background-color: gray;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 1em;
 }
