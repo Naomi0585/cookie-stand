@@ -73,14 +73,53 @@ footer {
     text-align: center;
 }
 
+.form-section {
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid #999;
+    padding: 15px;
+}
+
+legend {
+    color: salmon;
+    font-weight: bold;
+}
+ form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ form input {
+    margin-left: 5px;
+ }
+
+ form button {
+    padding: 5px 10px;
+ }
+
+.table-section {
+    padding: 30px;
+}
+
 table {
-    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
 }
 
 td {
     background-color: salmon;
     padding: 1em;
     border: 1px solid black;
+}
+
+td:first-child {
+    text-align: left;
+    font-weight: bold;
 }
 
 th {

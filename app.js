@@ -27,26 +27,35 @@ const hours = [
   }
 
   CookieStand.prototype.calcCustomersEacHour = function() {
+    this.customersEacHour = [];
     for (let i = 0; i < hours.length; i++) {
-        this.maxCustomersPerHour.push(random(this.minCustomerPerHour, this.maxCustomersPerHour));
+        this.customersEacHour.push(random(this.minCustomerPerHour, this.maxCustomersPerHour));
 
     }
   };
 
   CookieStand.prototype.calcCookiesEacHour = function() {
     this.calcCookiesEacHour();
-    for (let i = 0; i < hours.length; i++) {
-        const oneHour = Math.ceil(this.customersEacHour[i] * this.avgCookiesPerSale);
-        this.cookiesEacHour.push(oneHour);
-        this.totalDailyCookies += oneHour;
+
+    this.cookiesEacHour = [];
+    this.totalDailyCookies = 0;
+
+    for (let i = 0; i < hours.length; i++){
+        const oneHour = Math.ceil(
+         this.customersEacHour[i] * this.avgCookiesPerSale   
+        );
+    this.cookiesEacHour.push(oneHour);
+    this.totalDailyCookies += oneHour;
+   
     }
   }; 
 
   CookieStand.prototype.render = function() {
     this.calcCookiesEacHour();
     const tableRow = document.createElement('tr');
-    let tableDataElement = document.createElement('td');
-    tableRow.appendChild(tableDataElement);
+    let td = document.createElement('td');
+    td.textContent = this.locationName;
+    tableRow.appendChild(td);
      for (let i = 0; i < hours.length; i++) {
         tableDataElement = document.createElement('td');
         tableDataElement.textContent = this.cookiesEacHour[i];
@@ -65,7 +74,7 @@ const hours = [
     let lima = new CookieStand('Lima', 2, 16, 4.6);
     state.allCookieStands.push(seattle, tokyo, dubai, paris, lima);
 
-    function random(main, max) {
+    function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
 
     }
@@ -88,7 +97,7 @@ const hours = [
     }
 function makeFooterRow() { 
     const tableRow = document.createElement('tr');
-    let tableHeader = document.createElement('th');
+    let th = document.createElement('th');
     tableHeader.textContent = 'Hourly Totals for All Locations';
     tableRow.appendChild(tableHeader);
     let totalOfTotals = 0;
@@ -96,20 +105,30 @@ function makeFooterRow() {
         let hourlyTotal = 0;
         for (let j = 0; j <state.allCookieStands.length; j++){
             hourlyTotal += state.allCookieStands[j].cookiesEacHour[i];
-            totalOfTotals += state.allCookieStands[j].cookiesEacHour[i];
-
+            
         }
         tableHeader = document.createElement('th');
         tableHeader.textContent = hourlyTotal;
         tableRow.appendChild(tableHeader);
+        
+        grandTotal += hourlyTotal;
+
+        th = document.createElement('th');
+        th.textContent = grandTotal;
+        tableRow.appendChild(th);
+
         tableElement.appendChild(tableRow);
     }
-    (function renderTable() {
+
+    function renderTable() {
         makeHeaderRow();
         for(let i = 0; i < state.allCookieStands.length; i++){
             state.allCookieStands[i].render();
-
         }
+
         makeFooterRow();
-    })();
+    }
+
+    renderTable();
+
 }

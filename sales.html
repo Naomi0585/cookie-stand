@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link href="https://fonts.googlepis.com/css2?family=Righteous" rel="stylesheet">
-  <title>Salea Data: Pat's Salmon Cookies</title>
+  <title>Sales Data: Pat's Salmon Cookies</title>
 </head>
 
 <body>
@@ -23,14 +23,37 @@
    </header>
    <main>
 
-    <section class="content">
+    <section class="form-section">
+      <fieldset>
+        <legend>Add a new store!!!</legend>
+
+        <form id="store-form">
+        <label>
+          Location Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Minimum Customer Per Hour
+          <input type="number" name="min" required>
+        </label>
+
+        <label>
+          Maximum Customers Per Hour
+          <input type="number" name="max" required>
+        </label>
+
+        <button type="submit">Click here to add!</button>
+        </form>
+      </fieldset>
+    </section>
 
       <table id="sales-table"></table>
     </section>
    </main>
 
    <footer>
-    &copy; Pat's Salmon cookies 2026  
+    &copy; Pat's Salmon Cookies 2026  
   </footer>
 
  
