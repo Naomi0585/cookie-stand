@@ -42,20 +42,31 @@ header nav ul li {
 }
 
 .content {
-    margin: 3em;
+    margin: 3em auto;
+    width: 80%;
 }
 
 .location {
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 .location h2 {
     font-size: 2em;
     font-weight: bold;
+    margin-bottom: 0.3em;
 }
 
 .location li {
-    margin: .5em 2em;
+    margin: 0.2em 0;
+    color: #777;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.location ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 main li {
