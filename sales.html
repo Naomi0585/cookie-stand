@@ -28,28 +28,21 @@
         <legend>Add a new store!!!</legend>
 
         <form id="store-form">
-        <label>
-          Location Name
-          <input type="text" name="name" required>
-        </label>
-
-        <label>
-          Minimum Customer Per Hour
-          <input type="number" name="min" required>
-        </label>
-
-        <label>
-          Maximum Customers Per Hour
-          <input type="number" name="max" required>
-        </label>
-
-        <button type="submit">Click here to add!</button>
+          <label>Location Name <input name="name" /></label>
+          <label>Minimum Customers Per Hour <input name="min" type="number" /></label>
+          <label>Maximum Customers Per Hour <input name="max" type="number" /></label>
+          <label>Average Cookies Per Sale <input name="avg" type="number" step="0.1" /></label>
+          <button type="submit">Click here to add!</button>
+        
         </form>
       </fieldset>
     </section>
 
+    <section class="table-section">
       <table id="sales-table"></table>
     </section>
+
+
    </main>
 
    <footer>
